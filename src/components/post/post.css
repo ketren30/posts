@@ -1,0 +1,15 @@
+.table-cell {
+    padding: 1.22vw 0.97vw;
+    line-height: 1.46vw;
+    border-color: #E3E6EC;
+}
+.post-item {
+    border-radius: 3px;
+    border: 1px solid #E3E6EC;
+    margin-bottom: 20px;
+    padding: 1vw 3vw;
+    width: 100%;
+}
+.post-title {
+    margin-bottom: 20px;
+}

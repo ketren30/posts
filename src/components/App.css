@@ -1,0 +1,101 @@
+.main-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1.2vw 4vw 4vw 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form-wrapper {
+  width: 51.3vw;
+  position: relative;
+  margin-bottom: 0.8vw;
+}
+.search {
+  width: 100%;
+  background-color: #5A5C66;
+  padding: 1.46vw 0 1.22vw 2.11vw;
+  caret-color: white;
+  color: white;
+
+}
+.search::placeholder {
+  color: #B2B7BF;
+  font-family: Roboto;
+  font-size: 0.875rem;
+}
+.search-btn {
+  background: url(../images/search.png);
+  width: 1.7vw;
+  height: 1.7vw;
+  background-size: cover;
+  position: absolute;
+  top: calc((100% - 1.7vw) / 2);
+  right: 1.22vw;
+}
+.posts-wrapper {
+  flex-grow: 1;
+}
+.posts-table {
+  width: 100%;
+  font-family: Roboto;
+  font-size: 0.812rem;
+}
+
+.table-header {
+  background-color: #474955;
+  color: white; 
+  font-size: 0.875rem;
+  border-color: #E3E6EC;
+}
+.sorting-arrow {
+  margin-left: 3vw;
+}
+
+.header-cell:nth-child(1) {
+  width: 8.95vw;
+  padding-left: 1.86vw;
+}
+.header-cell:nth-child(2) {
+  width: 43vw;
+  padding-left: 10.5vw;
+}
+.header-cell:nth-child(3) {
+  width: 35vw;
+  padding-left: 10vw;
+}
+.header-cell {
+  padding: 1.55vw 0 1.22vw 0;
+  text-align: left;
+  border: none;
+}
+.sorting-arrow {
+  width: 1.2vw;
+}
+.select {
+  margin: 2vw;
+  appearance: none;
+  width: 30%;
+  border-radius: 2px;
+  font-family: 'Lato', sans-serif;
+  padding: 3px;
+}
+
+@media (max-width: 600px) {
+  .form-wrapper {
+    width: 100%;
+  }
+  .search {
+    width: 100%;
+    padding: 2vw 4vw;
+  }
+  .search-btn {
+    width: 3vw;
+    height: 3vw;
+    right: 2vw;
+    top: 2.5vw;
+  }
+  
+}
+
