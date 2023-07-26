@@ -12,8 +12,8 @@ export const Pagination = () => {
     const postsPerPage = useSelector(state => state.postsPerPage);
     const lastPostIndex = currentPage * postsPerPage;
     const firstPostIndex = lastPostIndex - postsPerPage;
-    const posts = useSelector(state => state.posts)
-
+    const posts = useSelector(state => state.posts);
+    
     useEffect(() => {
         dispatch(SetCurrentPosts([firstPostIndex, lastPostIndex]))
     }, [firstPostIndex, lastPostIndex, totalPages, posts]);
@@ -34,20 +34,20 @@ export const Pagination = () => {
     return (
         <nav className="pagination-wrapper">
             <Link 
-                to={`/page=${currentPage-1}`} 
+                to={`/?page=${currentPage-1}`} 
                 className="prev" 
                 onClick={()=>dispatch(ChangeCurrentPage(currentPage-1))}
             >Назад</Link>
 
-            {range.map((item, index) => <NavLink 
-                to={`/page=${item}`} 
+            {range.map((item) => <Link 
+                className={item===currentPage? 'link-item-active':'link-item'}
+                to={`/?page=${item}`} 
                 onClick={()=>dispatch(ChangeCurrentPage(item))} 
                 key={item}
-                className="link-item"
-            >{item}</NavLink>)}
+            >{item}</Link>)}
 
             <Link 
-                to={`/page=${currentPage+1}`} 
+                to={`/?page=${currentPage+1}`} 
                 className='next' 
                 onClick={()=>dispatch(ChangeCurrentPage(currentPage+1))}
             >Далее</Link>

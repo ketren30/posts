@@ -4,7 +4,7 @@ const initialState = {
     posts: [],
     currentPosts: [],
     loading: false,
-    currentPage: parseInt(window.location.search?.split('=')[1]||1),
+    currentPage: parseInt(window.location.search.split('=')[1]||1),
     postsPerPage: 10,
     totalPages: 0,
     width: document.documentElement.clientWidth

@@ -15,7 +15,6 @@ function App() {
   const width = useSelector(state => state.width)
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  
   const currentPosts = useSelector(state => state.currentPosts);
   const [searchStr, setSearchStr] = useState('');
 

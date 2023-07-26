@@ -18,7 +18,7 @@
   padding: 1.46vw 0 1.22vw 2.11vw;
   caret-color: white;
   color: white;
-
+  font-size: 0.875rem;
 }
 .search::placeholder {
   color: #B2B7BF;

@@ -1,14 +1,14 @@
 .pagination-wrapper {
     flex-shrink: 0;
     width: 82vw;
-    margin: 0 auto;
+    margin: 15px auto;
     display: flex;
     justify-content: center;
     color: #474955;
     align-items: center;
 }
 
-.link-item {
+.link-item, .link-item-active {
     width: 1.7vw;
     height: 1.7vw;
     text-decoration: none;
@@ -18,7 +18,7 @@
     font-style: italic;
     font-size: 1.125rem;
 }
-.link-item.active { 
+.link-item-active { 
     color: #7EBC3C;
 }
 
@@ -33,7 +33,7 @@
     color: inherit;
     font-style: normal;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     cursor: pointer;
     font-family: 'Lato', sans-serif;
     width: fit-content;
@@ -41,7 +41,7 @@
 }
 
 @media (max-width: 600px) {
-    .link-item {
+    .link-item, .link-item-active {
         width: 2.3vw;
         height: 2.3vw;
     }
